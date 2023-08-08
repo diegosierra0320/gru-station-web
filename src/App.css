@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(rgba(2, 2, 2, .5), rgba(3, 3, 3, 0.5)),
+    url('https://images.unsplash.com/photo-1555786766-e1e69380c4bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1168&q=80');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    background: linear-gradient(90deg, #e4d12a, #aeb11f);
+    height: 50px;
+    width: 95%;
+    border-bottom: 2px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    animation-name: aparition-products;
+    animation-duration: 1.3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.header img {
+    height: 65px;
+    border-radius: 50%;
+}
+
+.header-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.header-nav a {
+    text-decoration: none;
+    padding-right: 30px;
+    color: white;
+}
+
+.header-nav i {
+    margin-right: 5px;
+}
+
+.header-nav b {
+    color: white;
+}
+
+.header-nav b:hover {
+    color: #526D82;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #FD8D14;
+    height: 250px;
+    padding: 0 70px 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #ccc;
+}
+
+.footer hr {
+    height: 80%;
+}
+
+.footer img {
+    border-radius: 50%;
+}
+
+@keyframes aparition-products {
+    0%{
+        opacity: 0;
+        /* transform: scale(1.1) translateY(115px); */
+        -webkit-transform: translateY(800px);
+    }
+    100%{
+        opacity: 1;
+        /* transform: scale(1) translateY(1); */
+        -webkit-transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 500px){
+    body{
+        background-position: right;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: #FD8D14;
+        height: 500px;
+        padding: 0 10px 0 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-top: 2px solid #ccc;
+    }
+    
+    .footer hr {
+        height: 80%;
+    }
+
+    .footer ul {
+        list-style: none;
+    }
+    
+    .footer img {
+        border-radius: 50%;
+        height: 70px;
+    }
+}
+
+

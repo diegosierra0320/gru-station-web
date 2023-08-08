@@ -1,0 +1,121 @@
+.products-container {
+    opacity: 0;
+    animation-name: aparition-products;
+    animation-duration: 1.3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    grid-template:
+    "header"
+    "slider"
+    "info"
+    "footer"
+    ;
+}
+
+.header {
+    grid-area: header;
+    position: fixed;
+    z-index: 1;
+}
+
+.slider {
+    grid-area: slider;
+    /* background-image: url('https://images.unsplash.com/photo-1554306297-0c86e837d24b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1136&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 780px; */
+}
+
+.slider img {
+    width: 100%;
+}
+
+.products-info {
+    grid-area: info;
+    height: 100vh;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.products-item {
+    position: relative;
+    width: 800px;
+    height: 200px;
+    background-color: #F4F2DE;
+    text-shadow: black;
+    border-radius: 20px;
+    overflow: hidden;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 200ms ease;
+    cursor: pointer;
+}
+
+.products-item:hover {
+    transition: transform 200ms ease;
+    transform: scale(1.02);
+    box-shadow: 0 12px 16px rgba(175, 165, 165, 0.3);
+}
+
+.products-item img {
+    height: 200px;
+}
+
+.products-item b {
+    display: inline-block;
+    text-shadow: 3px 3px 5px black;
+}
+
+.products-item i {
+    color: black;
+    position: absolute;
+    font-size: 40px;
+    right: 10px;
+    bottom: 10px;
+}
+
+@keyframes aparition-products {
+    0%{
+        opacity: 0;
+        /* transform: scale(1.1) translateY(115px); */
+        -webkit-transform: translateY(800px);
+    }
+    100%{
+        opacity: 1;
+        /* transform: scale(1) translateY(1); */
+        -webkit-transform: translateY(1);
+    }
+}
+
+@media (max-width: 500px){
+
+    .slider img {
+        width: 100%;
+    }
+
+    .products-info {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto;
+    }
+
+    .products-item {
+        width: 100%;
+        height: 140px;
+        font-size: 25px;
+    }
+
+    .products-item img {
+        height: 140px;
+    }
+
+}
+
