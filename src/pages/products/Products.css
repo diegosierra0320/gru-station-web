@@ -1,3 +1,15 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(rgba(2, 2, 2, .5), rgba(3, 3, 3, 0.5)),
+    url('https://images.unsplash.com/photo-1555786766-e1e69380c4bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1168&q=80');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .products-container {
     opacity: 0;
     animation-name: aparition-products;
@@ -120,6 +132,5 @@
     .products-item img {
         height: 140px;
     }
-
 }
 
