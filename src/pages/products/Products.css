@@ -97,6 +97,10 @@
 
 @media (max-width: 500px){
 
+    body{
+        background-position: right;
+    }
+
     .slider img {
         width: 100%;
     }

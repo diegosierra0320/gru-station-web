@@ -98,6 +98,9 @@ body {
 
 
 @media (max-width: 500px){
+    body{
+        background-position: right;
+    }
 
     .header-nav {
         display: none;
