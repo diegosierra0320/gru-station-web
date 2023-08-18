@@ -1,40 +1,32 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
-// import { Autoplay, EffectCoverflow, Navigation, Pagination } from "swiper"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCube } from 'swiper';
 import "swiper/css"
 import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
 import "swiper/css/navigation"
+import "swiper/swiper-bundle.min.css"
 
 const SwiperProducts = () => {
 
   return (
     <div className='swiper_container'>
     <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={false}
+        // effect={"cube"}
+        // cubeEffect={{
+        //   shadow: true,
+        //   slideShadows: true,
+        //   shadowOffset: 50,
+        //   shadowScale: 1.94,
+        // }}
+        spaceBetween={50}
         slidesPerView={1}
-            // modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
-            className='swiper_container'
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        modules={[ Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCube ]}
             autoplay={{
               delay: 5000,
               disableOnInteraction: false,
-            }}
-            pagination={{
-              el: ".swiper-pagination",
-              clickable: true
-            }}
-            navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-              clickable: true
-            }}
-            coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 2.5,
             }}
         >
         <SwiperSlide>
