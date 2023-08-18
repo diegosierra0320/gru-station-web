@@ -66,6 +66,8 @@ body {
 
 .footer {
     grid-area: footer;
+    position: relative;
+    top: 70px;
     background-color: #FD8D14;
     height: 250px;
     padding: 0 70px 0 70px;

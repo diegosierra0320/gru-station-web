@@ -7,7 +7,7 @@ import SwiperProducts from '../../components/shared/swiperProducts/SwiperProduct
 const Products = () => {
   return (
     <div >
-      <Header/>
+        <Header/>
       <div className='products-container'>
         <div className='slider'>
           <SwiperProducts />

@@ -30,13 +30,10 @@ body {
     z-index: 1;
 }
 
-.slider {
+.swiper_container{
     grid-area: slider;
-    /* background-image: url('https://images.unsplash.com/photo-1554306297-0c86e837d24b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1136&q=80');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 780px; */
+    position: relative;
+    top: 70px;
 }
 
 .slider img {
@@ -45,6 +42,8 @@ body {
 
 .products-info {
     grid-area: info;
+    position: relative;
+    top: 70px;
     /* height: 100vh; */
     display: flex;
     padding-top: 20px;
@@ -111,10 +110,6 @@ body {
 
     body{
         background-position: right;
-    }
-
-    .slider img {
-        width: 100%;
     }
 
     .products-info {

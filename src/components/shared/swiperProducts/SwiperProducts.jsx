@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCube } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade } from 'swiper';
 import "swiper/css"
 import "swiper/css/effect-coverflow"
 import "swiper/css/pagination"
@@ -11,19 +11,21 @@ const SwiperProducts = () => {
   return (
     <div className='swiper_container'>
     <Swiper
-        // effect={"cube"}
-        // cubeEffect={{
+        effect="fade"
+        fadeEffect={{
+          crossFade: true
+        }}
+        // EffectFade={{
         //   shadow: true,
         //   slideShadows: true,
         //   shadowOffset: 50,
         //   shadowScale: 1.94,
         // }}
-        spaceBetween={50}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        modules={[ Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCube ]}
+        modules={[ Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade ]}
             autoplay={{
               delay: 5000,
               disableOnInteraction: false,
