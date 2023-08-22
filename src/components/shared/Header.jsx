@@ -1,5 +1,6 @@
 // import React from 'react'
 import { Link } from 'react-router-dom'
+import BurguerButton from './burguerButton/BurguerButton'
 
 const Header = () => {
   
@@ -12,6 +13,9 @@ const Header = () => {
             <b><i className="fa-solid fa-calendar"></i>Reserva una mesa</b>
             <b><i className="fa-solid fa-location-dot"></i>Restaurantes</b>
         </nav>
+        <div className='burguerButton'>
+          <BurguerButton/>
+        </div>
     </header>
   )
 }

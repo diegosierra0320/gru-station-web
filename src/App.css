@@ -64,6 +64,12 @@ body {
     color: #526D82;
 }
 
+.burguerButton {
+    @media(min-width: 500px) {
+        display: none;
+    }
+}
+
 .footer {
     grid-area: footer;
     position: relative;
@@ -107,6 +113,10 @@ body {
     .header-nav {
         display: none;
     }
+
+    /* .burguerButton {
+        background-color: red;
+    } */
 
     .footer {
         grid-area: footer;
