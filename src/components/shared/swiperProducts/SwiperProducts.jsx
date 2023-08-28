@@ -9,7 +9,7 @@ import "swiper/swiper-bundle.min.css"
 const SwiperProducts = () => {
 
   return (
-    <div className='swiper_container'>
+    <div className='slider'>
     <Swiper
         effect="fade"
         fadeEffect={{

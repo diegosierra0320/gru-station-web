@@ -6,13 +6,16 @@ import SwiperProducts from '../../components/shared/swiperProducts/SwiperProduct
 
 const Products = () => {
   return (
-    <div >
+    <div>
         <Header/>
       <div className='products-container'>
         <div className='slider'>
           <SwiperProducts />
         </div>
         <div className='products-info'>
+          <div className='products-container_title'>
+            <h1>NUESTRA CARTA</h1>
+          </div>
           <div className='products-item'>
             <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtYnVyZ3VlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""/>
             <b>Hamburguesas</b>
