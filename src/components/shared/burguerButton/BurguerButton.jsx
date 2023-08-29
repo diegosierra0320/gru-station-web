@@ -1,9 +1,10 @@
-// import React from 'react'
+import React from 'react'
 import './BurguerButton.css'
 
-const BurguerButton = () => {
+const BurguerButton = ({handleClick, clicked}) => {
+  
   return (
-    <div className="icon nav-icon-5">
+    <div onClick={handleClick} className={`icon nav-icon-5 ${clicked ? 'open' : ''}`}>
     <span></span>
     <span></span>
     <span></span>

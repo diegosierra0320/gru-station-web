@@ -113,7 +113,24 @@ body {
     }
 
     .header-nav {
-        display: none;
+        position: absolute;
+        top: -700px;
+        left: -2000px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .header-nav.active {
+        width: 100%;
+        display: block;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 30%;
+        left: 0;
+        right: 0;
+        text-align: center;
     }
 
     .footer {
