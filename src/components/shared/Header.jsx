@@ -23,6 +23,7 @@ const Header = () => {
         <div className='burguerButton'>
           <BurguerButton clicked={clicked} handleClick={handleClick}/>
         </div>
+        <div className={`initial ${clicked ? 'active' : ''}`}></div>
     </div>
   )
 }
