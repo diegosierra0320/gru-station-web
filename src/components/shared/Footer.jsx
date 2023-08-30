@@ -4,16 +4,16 @@ const Footer = () => {
 
   return (
     <div className='footer'>
-    <div>
-    <Link to='/'><img src="/utils/gru.PNG" alt="" /></Link>
-    <ul>
-        <li>Gru Station © 2023</li>
-        <li>Todos los derechos reservados</li>
-        <li>Desarrolado por DS</li>
-    </ul>
-    </div>
-    <hr/>
-    <div>
+      <div className='footer-info1'>
+      <Link to='/'><img src="/utils/gru.PNG" alt="" /></Link>
+      <ul>
+          <li>Gru Station © 2023</li>
+          <li>Todos los derechos reservados</li>
+          <li>Desarrolado por DS</li>
+      </ul>
+      </div>
+      <hr/>
+    <div className='footer-info2'>
       <b>ACERCA DE GRU STATION</b>
       <ul>
         <li>Nosotros</li>
@@ -23,7 +23,7 @@ const Footer = () => {
       </ul>
     </div>
     <hr/>
-    <div>
+    <div className='footer-info3'>
       <b>AYUDA</b>
       <ul>
         <li>Escribenos</li>
@@ -31,7 +31,7 @@ const Footer = () => {
       </ul>
     </div>
     <hr/>
-    <div>
+    <div className='footer-info4'>
       <b>SÍGUENOS</b>
       <ul>
           <a href="https://www.facebook.com/p/GRU-Station-100063695045353/" target='blank'><li><i className="fa-brands fa-facebook"></i></li></a>
