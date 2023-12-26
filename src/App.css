@@ -61,6 +61,10 @@ body {
     color: #526D82;
 }
 
+.info {
+    height: auto;
+}
+
 .burguerButton {
     @media(min-width: 1115px) {
         display: none;
