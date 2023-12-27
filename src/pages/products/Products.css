@@ -92,6 +92,42 @@ body {
     left: 5px;
 }
 
+
+.info-item_description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 750px;
+}
+
+.info-item_description img {
+    height: 120px;
+}
+
+.info-item_description_list {
+    border: solid 1px #aeb11f;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    list-style: none;
+    padding-right: 10px;
+}
+
+.info-item_description_list li:nth-child(2) {
+    width: 20%;
+    text-align: start;
+}
+
+.info-item_description_list li:nth-child(3) {
+    width: 40%;
+    text-align: start;
+}
+
 /* .products-item {
     position: relative;
     width: 700px;
