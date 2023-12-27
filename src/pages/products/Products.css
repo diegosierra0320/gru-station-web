@@ -283,5 +283,40 @@ body {
         bottom: 10px;
         left: 5px;
     }
+
+    .info-item_description {
+        margin-top: 10px;
+        width: 400px;
+    }
+    
+    .info-item_description img {
+        height: 70px;
+    }
+    
+    .info-item_description_list {
+        border: solid 1px #aeb11f;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        color: black;
+        list-style: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        font-size: 13px;
+    }
+    
+    .info-item_description_list li:nth-child(2) {
+        width: 20%;
+        text-align: start;
+    }
+    
+    .info-item_description_list li:nth-child(3) {
+        width: 30%;
+        text-align: start;
+    }
 }
 
