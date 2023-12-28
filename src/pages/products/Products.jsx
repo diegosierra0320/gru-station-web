@@ -74,7 +74,6 @@ const Products = () => {
                   <i className="fa-solid fa-chevron-down"></i>
                 </div>
               </div>
-
               
 
                 {open && (
@@ -84,8 +83,10 @@ const Products = () => {
                         productsInfo.map((item) => (
                           <ul className='info-item_description_list'>
                             <li key={item.id}><img src={item.image} alt=""/></li>
-                            <li><b>{item.name}</b></li>
-                            <li>{item.description}</li>
+                            <div className='info-item_description_list_2'>
+                              <li><b>{item.name}</b></li> <br />
+                              <li>{item.description}</li>
+                            </div>
                             <li><b>{item.price}</b></li>
                           </ul>
                         ))
