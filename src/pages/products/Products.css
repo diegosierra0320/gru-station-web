@@ -83,6 +83,10 @@ body {
     position: relative;
 }
 
+.info-item_title6 {
+    position: relative;
+}
+
 .info-item_title b {
     display: inline-block;
     text-shadow: 3px 3px 5px black;
@@ -91,7 +95,26 @@ body {
     bottom: 15px;
 }
 
+.info-item_title6 b {
+    display: inline-block;
+    text-shadow: 3px 3px 5px black;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 15px;
+    font-size: 41px;
+}
+
 .info-item_title i {
+    color: black;
+    font-size: 35px;
+    position: absolute;
+    bottom: 10px;
+    left: 675px;
+    bottom: 15px;
+    padding-left: 10px;
+}
+
+.info-item_title6 i {
     color: black;
     font-size: 35px;
     position: absolute;
@@ -293,9 +316,8 @@ body {
         font-size: 25px;
     }
 
-    .info-item > b :nth-child(2){
-        text-shadow: 3px 3px 5px red;
-        font-size: 10px;
+    .info-item_title6 b {
+        font-size: 20px;
     }
     
     .info-item i {

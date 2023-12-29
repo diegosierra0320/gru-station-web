@@ -528,7 +528,7 @@ const Products = () => {
                 }
 
               <div className='info-item' onClick={()=>setOpen6(!open6)}>
-                <div className='info-item_title'>
+                <div className='info-item_title6'>
                 <img src="https://media.istockphoto.com/id/1384617117/es/foto/surtido-de-comida-chatarra-dispersa-sobre-un-fondo-oscuro.webp?b=1&s=170667a&w=0&k=20&c=b_ej02xfjxjcEfHDf_Hw4PkBVk3-qPgRPfjX00lfHNI=" alt=""/>
                   <b>Acompañamientos</b>
                   <i className={open6 ? "fa-solid fa-chevron-up" : "fa-solid fa-chevron-down"}></i>
@@ -559,7 +559,7 @@ const Products = () => {
                 <div className='info-item_title'>
                 <img src="https://media.istockphoto.com/id/1395240880/es/foto/una-bebida-bien-fr%C3%ADa-y-deliciosa.webp?b=1&s=170667a&w=0&k=20&c=r_gckLIbcEnNnRfugjQRrDOnAouJzO0tk3VUIWP32Ow=" alt=""/>
                   <b>Bebidas</b>
-                  <i className={open6 ? "fa-solid fa-chevron-up" : "fa-solid fa-chevron-down"}></i>
+                  <i className={open7 ? "fa-solid fa-chevron-up" : "fa-solid fa-chevron-down"}></i>
                 </div>
               </div>
 
