@@ -220,7 +220,7 @@ body {
         height: 824px;
         display: block;
         position: absolute;
-        top: 100%;
+        top: -80px;
         left: 0;
         right: 0;
         text-align: center;
