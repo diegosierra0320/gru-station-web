@@ -75,12 +75,12 @@ body {
     overflow: hidden;
 }
 
-.info-item_title {
-    position: relative;
-}
-
 .info-item img {
     height: 200px;
+}
+
+.info-item_title {
+    position: relative;
 }
 
 .info-item_title b {
@@ -101,14 +101,6 @@ body {
     padding-left: 10px;
 }
 
-/* .info-item i {
-    color: black;
-    font-size: 35px;
-    position: relative;
-    bottom: 10px;
-    left: 0;
-} */
-
 .info-item_description {
     display: flex;
     flex-direction: column;
@@ -116,17 +108,6 @@ body {
     margin-top: 10px;
     width: 750px;
 }
-
-/* .info-item_description.open .info-item_description_list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-    width: 750px;
-    transform: scaleY(1);
-    transition: transform 300ms ease;
-    transform-origin: top;
-} */
 
 .info-item_description img {
     height: 120px;
