@@ -4,6 +4,7 @@ import './Products.css'
 import Footer from '../../components/shared/Footer'
 import SwiperProducts from '../../components/shared/swiperProducts/SwiperProducts'
 import { useState } from 'react'
+import whatsappLogo from '../../../public/utils/whatsappLogo.png'
 
 const Products = () => {
 
@@ -373,11 +374,17 @@ const Products = () => {
 
   return (
     <div>
+      <div className='img-wa'>
+        <a href="https://wa.me/573173175699">
+          <img src={whatsappLogo} alt="" />
+        </a>
+      </div>
       <Header/>
       <div className='products-container'>
         <div className='slider'>
           <SwiperProducts />
         </div>
+
 
 
         <div className='info'>
