@@ -2,7 +2,6 @@ import './App.css'
 import { Routes, Route} from 'react-router-dom'
 import Home from './pages/home/Home'
 import Products from './pages/products/Products'
-import Delivery from './pages/delivery/Delivery'
 
 function App() {
 
