@@ -9,7 +9,7 @@ const Home = () => {
         <img src="/utils/gru.PNG" alt="" />
         <div className='home-nav'>
             <Link to='/carta'><b>NUESTRA CARTA</b></Link>
-            <b>PEDIR COMIDA A DOMICILIO</b>
+            <a href="https://wa.me/573173175699"><b>PEDIR COMIDA A DOMICILIO</b></a>
             <b>RESERVAR UNA MESA</b>
             <b>RESTAURANTES</b>
         </div>
