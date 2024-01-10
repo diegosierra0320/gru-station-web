@@ -123,7 +123,7 @@ const Products = () => {
     },
     {
       id: 14,
-      name: "Perro Haeaiano",
+      name: "Perro Hawaiano",
       description: "Pan bimbo, Salchicha Americana, Queso, Cebolla, Papa cabello de angel, Piña, Jamón",
       price: "$ 14.000",
       image: "https://media.istockphoto.com/id/182819295/es/foto/perrito-caliente.webp?b=1&s=170667a&w=0&k=20&c=3dM328cJiW84c7I7Ja3t4MKEdhBdDV19dwShF0PqoIs=",
